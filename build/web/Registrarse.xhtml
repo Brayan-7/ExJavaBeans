@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Nuevo Registro</title>
+    </h:head>
+    <h:body>
+        <center><h1>NUEVO REGISTRO</h1></center>
+        <br/>
+        <br/>
+        <h:form id="Reg">
+            <center>
+                <table>
+                    <tr>
+                        <td>
+                            <div>
+                                <h:outputLabel>Nombre: </h:outputLabel> <h:inputText  id="name" value="#{log.name}" requiredMessage="Ingrese Nombre"/>
+                                <br/>
+                                <h:outputLabel>Apellido: </h:outputLabel> <h:inputText  id="las" value="#{log.last}"/>
+                                <br/>
+                                <h:outputLabel>Usuario: </h:outputLabel> <h:inputText  id="usuS" value="#{log.usu1}"/>
+                                <br/>
+                                <h:outputLabel>Correo: </h:outputLabel> <h:inputText  id="ema" value="#{log.email}"/>
+                                <br/>
+                                <h:outputLabel>Fecha Nacimiento: </h:outputLabel> <h:inputText  id="fech" value="#{log.dateN}"/>
+                                <br/>
+                                <h:outputLabel>Telefono: </h:outputLabel> <h:inputText  id="cel" value="#{log.cel}"/>
+                                <br/>
+                                <h:outputLabel>Contraseña: </h:outputLabel> <h:inputText  id="pas" value="#{log.pass1}"/>
+                                <br/>
+                                <br/>
+                                <h:commandButton action="#{log.IngresarD()}" value="Aceptar"/>
+                                <input type="reset" value="Cancelar" />
+                                <input type="button" value="Regresar" onclick="location.href='index.xhtml'" />
+                            </div>
+                        </td>
+                        <td>
+                            <img src="registro.jpg" alt="Ventas en linea"/>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </h:form>
+    </h:body>
+</html>
+

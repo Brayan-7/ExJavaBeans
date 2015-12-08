@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Tienda de Ventas en linea</title>
+    </h:head>
+    <h:body>
+        <center><h1>INICIAR SESIÓN</h1></center>
+        <br/>
+        <br/>
+        <h:form>
+        <center>
+            <table>
+        	<tr>
+                    <td>
+                        <h:outputLabel>Usuario: </h:outputLabel> <h:inputText  id="usu" value="#{log.usuario}"/>
+                        <br/>
+                        <h:outputLabel>Contraseña: </h:outputLabel> <h:inputSecret  id="pass" value="#{log.pass}"/>
+                        <br/>
+                        <br/>
+                        <h:commandButton action="#{log.Inicio()}" value="Iniciar"/>
+                        <input type="reset" value="Cancelar" />
+                        <input type="button" value="Registrarse" onclick="location.href='Registrarse.xhtml'" />
+                    </td>
+                    <td>
+                        <img src="Logo.png" alt="Ventas en linea"/>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        </h:form>
+    </h:body>
+</html>
+
